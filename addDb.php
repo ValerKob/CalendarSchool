@@ -1,10 +1,10 @@
 <?php
 
 if ($_POST['dataZa'] == '0') {
-    $new_url = 'http://app.ru/Projects/CalendarSchool/index.php?dateZaProv=0';
+    $new_url = 'http://cw04582.tw1.ru/index.php?dateZaProv=0';
     header('Location: ' . $new_url);
 } else {
-    $connect = mysqli_connect('localhost', 'root', '', 'calendarSchool');
+    $connect = mysqli_connect('vh420.timeweb.ru', 'cw04582', '', 'cw04582_cq');
 
     $fio = $_POST['fio'];
     $email = $_POST['email'];
@@ -13,6 +13,6 @@ if ($_POST['dataZa'] == '0') {
 
     mysqli_query($connect, "INSERT INTO `applications` (`id`, `fio`, `email`, `tel`, `dataZa`) VALUES (NULL, '$fio', '$email', '$tel', '$dataZa')");
 
-    $new_url = 'http://app.ru/Projects/CalendarSchool/phoneConf.php?dataZa=' . $dataZa;
+    $new_url = 'http://cw04582.tw1.ru/phoneConf.php?dataZa=' . $dataZa;
     header('Location: ' . $new_url);
 }

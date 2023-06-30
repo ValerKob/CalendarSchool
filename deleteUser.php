@@ -1,10 +1,10 @@
 <?php
 
-$connect = mysqli_connect('localhost', 'root', '', 'calendarSchool');
+$connect = mysqli_connect('vh420.timeweb.ru', 'cw04582', '', 'cw04582_cq');
 
 $id = $_POST['deleteUser'];
 
 mysqli_query($connect, "DELETE FROM applications WHERE `applications`.`id` = $id");
 
-$new_url = 'http://app.ru/Projects/CalendarSchool/Ad134Qfg5d.php';
+$new_url = 'http://cw04582.tw1.ru/Ad134Qfg5d.php';
 header('Location: ' . $new_url);

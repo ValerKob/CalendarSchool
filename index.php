@@ -1,6 +1,6 @@
 <?php
 
-$connect = mysqli_connect('localhost', 'root', '', 'calendarSchool');
+$connect = mysqli_connect('vh420.timeweb.ru', 'cw04582', '', 'cw04582_cq');
 
 $post = mysqli_query($connect, "SELECT * FROM `applications`");
 

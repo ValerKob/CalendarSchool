@@ -1,7 +1,6 @@
 <?php
 
-$connect = mysqli_connect('vh420.timeweb.ru', 'cw04582', 'm38nsMVs', 'cw04582_cq');
-
+$connect = mysqli_connect('cw04582.tw1.ru', 'cw04582', 'm38nsMVs', 'cw04582_cq');
 $id = $_POST['deleteUser'];
 
 mysqli_query($connect, "DELETE FROM applications WHERE `applications`.`id` = $id");

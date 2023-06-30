@@ -1,6 +1,6 @@
 <?php
 
-$connect = mysqli_connect('localhost', 'cw04582', 'm38nsMVs', 'cw04582_cq');
+$connect = mysqli_connect('localhost', 'cw04582', 'cq14111_projec', 'cw04582_cq');
 
 $post = mysqli_query($connect, "SELECT * FROM `applications`");
 
